@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ------- customize primary button color -------- */   
+
+
+:root{
+
+    --hue-color: 152;
+
+    --body-color: #F6F6F6;
+    --base-color: hsl(var(--hue-color), 69%, 29%);
+    --base-color-ascent: hsl(var(--hue-color), 69%, 29%);
+    --base-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --base-color-light: hsl(var(--hue-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-color);
+}
+
+.text-color{
+    color : var(--text-color);
+}
+
+.text-base{
+    color: var(--base-color);
+}
+
+.text-base:hover{
+    color : var(--base-color);
+}
+
+.link-color{
+    color : var(--text-color);
+}
+
+.link-color:hover{
+    color : var(--text-color-light);
+}
+
+.base-color{
+    color: var(--base-color);
+}
+
+.base-bg{
+    background-color: var(--base-color) !important;
+}
+
+.base-bg-alt{
+    background-color: var(--base-color-alt);
+}
+
+.base-bg-ascent{
+    background-color: var(--base-color-ascent);
+}
+
+/* nav */
+.title-icon{
+    transform: rotate(-20deg);
+}
+.ms-n5 {
+    margin-left: -40px;
+}
+
+/* home */
+.base-bg{
+    background-color: var(--base-color);
+}
+
+#website-info {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(23, 125, 77, 1)),
+    linear-gradient(to left, rgba(245, 246, 252, 0), rgba(23, 125, 77, 1)),
+    url('https://www.esaunggul.ac.id/wp-content/uploads/2017/07/IMG_1959.jpg');
+    width: 100%;
+    height: 500px;
+    /* background-attachment: fixed; */
+    background-position: center center;
+    background-size:cover;
+    color: white;
+}
+
+.info{
+    position:absolute;
+    width:40%;
+    top: 300px;
+    left: 5%;
+}
+
+#wave{
+    z-index:-100;
+}
+
+.owl-prev {
+    position: absolute !important;
+    top: 40% !important;
+    margin-left: -30px !important;
+    display: block !important;
+    border:0px solid black !important;
+}
+
+.owl-next {
+    position: absolute !important;
+    top: 40% !important;
+    right: -25px !important;
+    display: block !important;
+    border:0px solid black !important; 
+}
+.owl-prev i, .owl-next i {color: var(--base-color) !important;}
+.owl-prev i:hover, .owl-next i:hover {color: var(--base-color-alt) !important;}
+
+#owl-demo .item img{
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 4px;
+    /* box-shadow: 0px 0px 7px #888888; */
+}
+
+#owl-demo .owl-dot.active span{
+    background-color: var(--base-color) !important;
+}
+
+.image{
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.image .overlay {
+    position: absolute;
+    display:none;
+    bottom: 0;
+    padding-left: 25px;
+    padding-top: 15px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    z-index: 5;
+}
+
+.image .overlay::before{
+    content: "";
+    background: black;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    left:0;
+    z-index: -2;
+    opacity: 0.5;
+    transition: all 0.3s ease-out;
+    bottom: -150px;
+}
+.image:hover .overlay{
+    font-size:15px;
+    font-weight: bold;
+    display: block;
+    transition: all 0.3s ease-out;
+}
+
+.overlay:hover {
+    color: var(--base-color-alt);
+}
+
+.image:hover .overlay::before{
+    bottom: 0px;
+}
+
+.title-image{
+    font-size: 15px;
+}
+
+
+.categorized-book, .tag-book{
+    transition: all 0.3s ease-out;
+}
+.categorized-book:hover, .tag-book:hover{
+    box-shadow: 1rem 1rem 1.5rem rgba(0,0,0,.15)!important;
+    transition: all 0.3s ease-out;
+}
+
+.button-flex-container {
+    display: flex;
+    align-items: center;
+}
+.button-flex-container .divider {
+    flex: 1;
+    height: 1.5px;
+    background-color: var(--base-color);
+}
+
+/* book details */
+
+.table-book tr td {
+    padding-top: 0px !important;
+    padding-bottom: 5px !important;
+}
+
+.attribute {
+    width: 70px !important;
+    padding-left: 1px !important;
+    padding-right: 0px !important;
+}
+
+.colon {
+    width: 2px !important;
+    padding-left: 20px !important;
+    padding-right: 0px !important;
+}
+
+.value {
+    width: 600px;
+    padding-left: 0px !important;
+}
+
+/* about */
+.img-about{
+    max-width: 300px!important;
+}
+
+/* admin add book */
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
+
+/* logs */
+.activity-log {
+    padding: 15px;
+  }
+.activity-log .log-item {
+    position: relative;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    border-left: 2px solid #e4e8eb;
+}
+.activity-log .log-item:last-child {
+    border-color: transparent;
+}
+.activity-log .log-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid var(--base-color);
+}
+.activity-log .log-item .date {
+    position: relative;
+    top: -5px;
+    color: #8c96a3;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.activity-log .log-item .text {
+    position: relative;
+    top: -3px;
+}
