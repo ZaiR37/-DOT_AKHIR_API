@@ -37,30 +37,6 @@
                 <div class="mb-3">
                     <div class="row justify-content-center">
                         <div class="col-md-3 bg-white py-5 px-4">
-                            <img src="{{ asset('images/rivaldo_suryadi.jpeg') }}" alt="" width="100" class="img-about img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                        </div>
-                        <div class="col-md-3 bg-white py-5 px-4 text-start">
-                            <span class="small text-uppercase text-muted">Back-End Developer</span>
-                            <h5 class="mb-0">Rivaldo Suryadi</h5>
-                            <hr>
-                            <table class="table table-sm table-borderless text-muted p-0 m-0">
-                                <tr>
-                                    <td>NIM</td>
-                                    <td>:</td>
-                                    <td>20200801023</td>
-                                </tr>
-                                <tr>
-                                    <td>Email</td>
-                                    <td>:</td>
-                                    <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;">rivaldosuryadi@student.esaunggul.ac.id</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="row justify-content-center">
-                        <div class="col-md-3 bg-white py-5 px-4">
                             <img src="{{ asset('images/nur_alifia_riany.jpeg') }}" alt="" width="100" class="img-about img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                         </div>
                         <div class="col-md-3 bg-white py-5 px-4 text-start">
